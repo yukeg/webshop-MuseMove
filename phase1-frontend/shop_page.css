@@ -1,0 +1,144 @@
+/* Classifier */
+.margin-right-custom {
+  background-color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border: none;
+  color: #333;
+}
+
+/* Product card */
+.card {
+  border: none; 
+}
+.product-img {
+  width: 100%; /* The image width is consistent with the card container */
+  height: 260px; /* fixed height */
+  object-fit: cover; /* The excess part will be cropped and the image will fill the entire container area. */
+  }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sizes,
+.product-price {
+  margin-bottom: 8px; /* Keep an 8px margin from the bottom button, adjustable as needed */
+  align-items: flex-end;
+}
+
+/* Product name */
+a .product-name {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+/* Product price location */
+.product-price {
+  margin-bottom: 10px;
+}
+
+.sizes,
+.product-price {
+  align-self: flex-end; /* Align sizes and price to the right */
+  margin-bottom: 8px; /* Margin from the next element (might be price or button) */
+  align-items: end;
+}
+
+/* Add to cart */
+.btn-primary {
+  background-color: #5B7493;
+  border: none;
+}
+
+/* Original price */
+.original-price {
+  color: red;
+  text-decoration: line-through; /* Strike-through for original price */
+}
+
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) { 
+  .margin-right-custom {
+    margin-right: 40px; 
+  }
+  .product-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) { /* For mobile phones */
+  .margin-right-custom {
+    margin-right: 20px; 
+  }
+  .card-body {
+    min-height: 120px; 
+  }
+  .product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+  
+  }
+  .notification {
+    width: 90%; 
+    padding: 10px; 
+  }
+}
+
+
+@media (max-width: 692px) {
+  .product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+  }
+}
+
+/* devices less than 1024px wide */
+@media (max-width: 1024px) { 
+  .margin-right-custom {
+    margin-right: 20px;
+  }
+  .card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
+  }
+  .product-img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+  }
+  .card-body {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+  .notification {
+    width: 90%;
+    padding: 10px;
+  }
+  .btn-primary {
+    margin-top: auto; 
+  }
+}

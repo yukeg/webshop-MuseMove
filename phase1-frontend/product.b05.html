@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Waist Capri Sports Leggings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Chosen+Font&display=swap">
+    <script src="nav-bar-script.js"></script>
+    <link rel="stylesheet" href="productDetails-style.css">
+    <link rel="stylesheet" href="nav-bar-style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="home.html" style="font-family: Futura;">MuseMove</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li id="userDropdown" class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdownToggle" role="button">
+                    <i class="fa fa-user" style="font-size: 24px;"></i>
+                    <span id="userName"></span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.html" id="loginLink">Log in</a>
+                    <a class="dropdown-item" href="#" onclick="logout()" id="logoutLink" style="display: none;">Log
+                        out</a>
+                </div>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="cart.html">
+                    <i class="fa fa-shopping-cart" style="font-size: 24px;"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <!-- Carousel -->
+                <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#productCarousel" data-slide-to="1"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image\Bottoms\5\638442862751330000.jpeg" alt="Product Image 1"
+                                class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image\Bottoms\5\638442862751330000 (2).jpeg" alt="Product Image 2"
+                                class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#productCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#productCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h1>High Waist Capri Sports Leggings</h1>
+                    <p class="price">
+                        <span class="current-price">299,00 kr</span>
+                    </p>
+                    <div class="product-options">
+                        <div class="sizes">
+                            <span>Size:</span>
+                            <label for="size-s">S
+                                <input type="radio" id="size-s" name="size" value="S" checked>
+                            </label>
+                            <label for="size-m">M
+                                <input type="radio" id="size-m" name="size" value="M">
+                            </label>
+                            <label for="size-l">L
+                                <input type="radio" id="size-l" name="size" value="L">
+                            </label>
+                        </div>
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <select id="quantity-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="add-to-cart" product-id="bottom05">Add to cart</button>
+                    <p class="product-features">
+                        Product Features:
+                    </p>
+                    <li>Exceptional resilience provides a firm and tight fit that moves with you.</li>
+                    <li>Double-sided weaving technique increases fabric density, enhancing overall durability and
+                        function.</li>
+                    <li>Eight-way stretch capability allows for three-dimensional, 360-degree extension and
+                        flexibility.</li>
+                    <li>Updated high waist capri design for a modern aesthetic.</li>
+                    <li>V-shaped back seam creates a visual lift of the buttocks by 2cm, flattering all buttock
+                        shapes and sizes.</li>
+                    <li>Designed with a narrower waistband for stable support.</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="productDetails-script.js"></script>
+</body>
+
+</html>

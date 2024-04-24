@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuseMove Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="nav-bar-style.css" />
+    <style>
+      .navbar {
+        background-color: #fff;
+      }
+      .navbar a {
+        color: #5b7493;
+      }
+      .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        background-color: #fff;
+      }
+      .navbar-nav .nav-item.dropdown:hover .dropdown-menu a {
+        color: #5b7493;
+      }
+      .navbar-brand:hover,
+      .navbar-nav .nav-link:hover {
+        color: var(--custom-primary-color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm">      
+      <a class="navbar-brand" href="home.html" style="font-family: Futura;">MuseMove</a>
+  
+      <ul class="navbar-nav ml-auto">
+          <li id="userDropdown" class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdownToggle" role="button">
+                  <i class="fa fa-user" style="font-size: 24px;"></i> 
+                  <span id="userName"></span>
+              </a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="login.html" id="loginLink">Log in</a>
+                  <a class="dropdown-item" href="#" onclick="logout()" id="logoutLink" style="display: none;">Log out</a>
+              </div>
+          </li>
+
+          <li class="nav-item active">
+              <a class="nav-link" href="cart.html">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px;"></i>
+              </a>
+          </li>
+      </ul>
+  </nav>
+
+    <div id="cartHeader" class="cart-header"></div>
+
+    <div class="cart-container">
+      <div id="productsSection" class="products-section"></div>
+
+      <div id="orderSummary" class="order-summary">
+        <h2>Order Summary</h2>
+        <p>Subtotal: <span id="subtotal">0</span></p>
+        <p>Shipping: <span id="shipping">30</span></p>
+        <p>Total: <span id="total">0</span></p>
+        <button class="action-button" id="proceedToCheckout">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <div>
+      <button class="action-button" id="continueShopping">Continue Shopping</button>
+    </div>
+    <script src="cart.js"></script>
+    <script src="nav-bar-script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="nav-bar-script.js"></script>
+  </body>
+</html>

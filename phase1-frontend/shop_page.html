@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Chosen+Font&amp;display=swap">
+
+  <link rel="stylesheet" href="nav-bar-style.css">
+  <link rel="stylesheet" href="shop_page.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="home.html" style="font-family: Futura;">MuseMove</a>
+
+    <ul class="navbar-nav ml-auto">
+
+      <li id="userDropdown" class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdownToggle" role="button">
+          <i class="fa fa-user" style="font-size: 24px;"></i> <!-- Person figure icon -->
+          <span id="userName"></span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="login.html" id="loginLink">Log in</a>
+          <a class="dropdown-item" href="#" onclick="logout()" id="logoutLink" style="display: none;">Log out</a>
+        </div>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="cart.html">
+          <i class="fa fa-shopping-cart" style="font-size: 24px;"></i>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <!--Dropdowns Classification 1-->
+  <!-- container for drop-down buttons -->
+  <div class="d-flex justify-content-center">
+    <!-- first drop-down button -->
+    <div class="dropdown margin-right-custom"> <!-- me-2 给按钮之间提供一些间隔 -->
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        Category
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#" data-category="all">All Categories</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Top">Top</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Bottom">Bottom</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Yoga Mat">Yoga Mat</a></li>
+      </ul>
+    </div>
+    <!-- the second drop-down button -->
+    <div class="dropdown margin-right-custom">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        Price
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#" data-price="all">All Prices</a></li>
+        <li><a class="dropdown-item" href="#" data-price="0-99">0 - 99kr</a></li>
+        <li><a class="dropdown-item" href="#" data-price="100-199">100 - 199kr</a></li>
+        <li><a class="dropdown-item" href="#" data-price="199-">> 199kr</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!--Goods list-->
+  <div class="container mt-3">
+    <div id="product-row" class="row">
+      <!-- Product 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Top">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.top01.html">
+            <img src="image\top\1\638410919194070000.jpg" class="product-img" alt="V-Shaped Droplet Sports Bra">
+            <h5 class="product-name">V-Shaped Droplet Sports Bra Low Intensity CityWalk</h5>
+          </a>
+          <div class="card-body d-flex flex-column justify-content-between">
+
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+
+            <p class="product-price text-end .mt-auto">120,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="top01">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Top">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.top02.html">
+            <img src="./image/top/2/638410918986830000.jpeg" class="product-img" alt="Slimming Short Sleeve Sports Bra">
+            <h5 class="product-name">Slimming Short Sleeve Sports Bra High Intensity CityWalk Series </h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end .mt-auto">249,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="top02">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Top">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.top03.html">
+            <img src="./image/top/3/638410918654630000.jpeg" class="product-img"
+              alt="Tapered Shoulder Racerback Longline Sports Bra">
+            <h5 class="product-name">Tapered Shoulder Racerback Longline Sports Bra High Intensity CityWalk Series</h5>
+          </a>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end .mt-auto">249,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="top03">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Top">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.top04.html">
+            <img src="./image/top/4/638440469900730000 (2).jpeg" class="product-img"
+              alt="Seamless High-Elasticity Long Sleeve Sports Top">
+            <h5 class="product-name">Seamless High-Elasticity Long Sleeve Sports Top</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end .mt-auto">329,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="top04">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Top">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.top05.html">
+            <img src="./image/top/5/638437646082630000.jpeg" class="product-img"
+              alt="Short Cropped Round Neck Sports Top ">
+            <h5 class="product-name">Short Cropped Round Neck Sports Top </h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+
+            <div class="product-price text-end">
+              <span class="original-price">329,00 kr</span> <span class="product-price">249,00 kr</span>
+            </div>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="top05">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Top">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.top06.html">
+            <img src="./image/top/new/638322016966670000 (1).jpeg" class="product-img"
+              alt="Soft U-Back Short Sleeve Bra Top ">
+            <h5 class="product-name">Soft U-Back Short Sleeve Bra Top</h5>
+          </a>
+
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">249,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="top06">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Bottom">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.b01.html">
+            <img src="./image/Bottoms/1/638375470671930000.jpeg" class="product-img"
+              alt="Cropped Sports Leggings Yoga Pants">
+            <h5 class="product-name">2.0 New Edition SoftSkin GT2.0 High Waist Cropped Sports Leggings Yoga Pants</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">299,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="bottom01">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Bottom">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.b02.html">
+            <img src="./image/Bottoms/2/638442868938370000.jpeg" class="product-img"
+              alt="Multi-Pocket Training Sports Long Pants">
+            <h5 class="product-name">Multi-Pocket Functional Training Sports Long Pants Courageous</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">299,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="bottom02">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Bottom">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.b03.html">
+            <img src="image\Bottoms\3\638390948064130000(1).jpg" class="product-img"
+              alt="High Waist Booty Enhancing Pocket Shorts">
+            <h5 class="product-name">CC Co-branded Change Series High Waist Booty Enhancing Pocket Shorts</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">199,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="bottom03">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Bottom">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.b04.html">
+            <img src="./image/Bottoms/4/638375472541600000.jpeg" class="product-img" alt="Sports Leggings Yoga Pants">
+            <h5 class="product-name">2.0 New Edition SoftSkin GT2.0 High Waist Capri Sports Leggings Yoga Pants</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">299,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="bottom04">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Bottom">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.b05.html">
+            <img src="./image/Bottoms/5/638442862751330000.jpeg" class="product-img"
+              alt="High Waist Capri Sports Leggings">
+            <h5 class="product-name">2.0 New Edition Slim Build High Waist Capri Sports Leggings</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">299,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="bottom05">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Bottom">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.b06.html">
+            <img src="./image/Bottoms/6/638375481856000000.jpeg" class="product-img"
+              alt="High Waist Capri Sports Leggings">
+            <h5 class="product-name">2.0 New Edition Slim Build High Waist Capri Sports Leggings</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="sizes">
+              <span>Size:</span>
+              <label for="size-s">
+                <input type="radio" id="size-s" name="size" value="S" checked>
+                S
+              </label>
+              <label for="size-m">
+                <input type="radio" id="size-m" name="size" value="M">
+                M
+              </label>
+              <label for="size-l">
+                <input type="radio" id="size-l" name="size" value="L">
+                L
+              </label>
+            </div>
+            <p class="product-price text-end">299,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="bottom06">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Yoga Mat">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.mat01.html">
+            <img src="./image/yoga mat/1/LU9AG9S_064645_1.jpg" class="product-img"
+              alt="Mat Made With FSC™ Certified RubberMarble">
+            <h5 class="product-name">The (Big) Mat Made With FSC™ Certified RubberMarble</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+
+            <p class="product-price text-end">180,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="mat01">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Yoga Mat">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.mat02.html">
+            <img src="./image/yoga mat/2/LU9AVOS_038470_1.jpg" class="product-img" alt="The Workout Mat 6mm">
+            <h5 class="product-name">The Workout Mat 6mm</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+
+            <p class="product-price text-end">99,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="mat02">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-category="Yoga Mat">
+        <div class="card p-3 d-flex flex-column">
+          <a href="product.mat03.html">
+            <img src="./image/yoga mat/3/LU9AYAS_064505_1.jpg" class="product-img" alt="The Lightweight Mat 5mm">
+            <h5 class="product-name">The Lightweight Mat 5mm</h5>
+          </a>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+
+            <p class="product-price text-end">99,00 kr</p>
+            <a href="#" class="btn btn-primary add-to-cart" product-id="mat03">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Products will be added here using JavaScript -->
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="shop_page.js"></script>
+
+</body>
+
+</html>

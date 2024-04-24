@@ -1,0 +1,167 @@
+[
+  {
+      "productId": "top01",
+      "productName": "V-Shaped Droplet Sports Bra Low Intensity CityWalk",
+      "price": 120.00,
+      "currency": "kr",
+      "category": "Top",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/top/1/638410919194070000.jpg",
+      "description": "V-Shaped Droplet Sports Bra Low Intensity CityWalk",
+      "url": "product.top01.html"
+  },
+  {
+      "productId": "top02",
+      "productName": "Slimming Short Sleeve Sports Bra High Intensity CityWalk Series",
+      "price": 249.00,
+      "currency": "kr",
+      "category": "Top",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/top/2/638410918986830000.jpeg",
+      "description": "Slimming Short Sleeve Sports Bra High Intensity CityWalk Series",
+      "url": "product.top02.html"
+  },
+  {
+      "productId": "top03",
+      "productName": "Tapered Shoulder Racerback Longline Sports Bra High Intensity CityWalk Series",
+      "price": 249.00,
+      "currency": "kr",
+      "category": "Top",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/top/3/638410918654630000.jpeg",
+      "description": "Tapered Shoulder Racerback Longline Sports Bra High Intensity CityWalk Series",
+      "url": "product.top03.html"
+  },
+  {
+      "productId": "top04",
+      "productName": "Seamless High-Elasticity Long Sleeve Sports Top",
+      "price": 329.00,
+      "currency": "kr",
+      "category": "Top",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/top/4/638440469900730000 (2).jpeg",
+      "description": "Seamless High-Elasticity Long Sleeve Sports Top",
+      "url": "product.top04.html"
+  },
+  {
+      "productId": "top05",
+      "productName": "Short Cropped Round Neck Sports Top",
+      "price": 249.00,
+      "currency": "kr",
+      "category": "Top",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/top/5/638437646082630000.jpeg",
+      "description": "Short Cropped Round Neck Sports Top",
+      "url": "product.top05.html"
+  },
+  {
+      "productId": "top06",
+      "productName": "Soft U-Back Short Sleeve Bra Top",
+      "price": 249.00,
+      "currency": "kr",
+      "category": "Top",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/top/new/638322016966670000 (1).jpeg",
+      "description": "Soft U-Back Short Sleeve Bra Top",
+      "url": "product.top06.html"
+  },
+  {
+      "productId": "bottom01",
+      "productName": "2.0 New Edition SoftSkin GT2.0 High Waist Cropped Sports Leggings Yoga Pants",
+      "price": 299.00,
+      "currency": "kr",
+      "category": "Bottom",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/Bottoms/1/638375470671930000.jpeg",
+      "description": "2.0 New Edition SoftSkin GT2.0 High Waist Cropped Sports Leggings Yoga Pants",
+      "url": "product.b01.html"
+  },
+  {
+      "productId": "bottom02",
+      "productName": "Multi-Pocket Functional Training Sports Long Pants Courageous",
+      "price": 299.00,
+      "currency": "kr",
+      "category": "Bottom",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/Bottoms/2/638442868938370000.jpeg",
+      "description": "Multi-Pocket Functional Training Sports Long Pants Courageous",
+      "url": "product.b02.html"
+  },
+  {
+      "productId": "bottom03",
+      "productName": "CC Co-branded Change Series High Waist Booty Enhancing Pocket Shorts",
+      "price": 199.00,
+      "currency": "kr",
+      "category": "Bottom",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/Bottoms/3/638390948064130000(1).jpg",
+      "description": "CC Co-branded Change Series High Waist Booty Enhancing Pocket Shorts",
+      "url": "product.b03.html"
+  },
+  {
+      "productId": "bottom04",
+      "productName": "2.0 New Edition SoftSkin GT2.0 High Waist Capri Sports Leggings Yoga Pants",
+      "price": 299.00,
+      "currency": "kr",
+      "category": "Bottom",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/Bottoms/4/638375472541600000.jpeg",
+      "description": "2.0 New Edition SoftSkin GT2.0 High Waist Capri Sports Leggings Yoga Pants",
+      "url": "product.b04.html"
+  },
+  {
+      "productId": "bottom05",
+      "productName": "2.0 New Edition Slim Build High Waist Capri Sports Leggings",
+      "price": 299.00,
+      "currency": "kr",
+      "category": "Bottom",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/Bottoms/5/638442862751330000.jpeg",
+      "description": "2.0 New Edition Slim Build High Waist Capri Sports Leggings",
+      "url": "product.b05.html"
+  },
+  {
+      "productId": "bottom06",
+      "productName": "2.0 New Edition Slim Build High Waist Capri Sports Leggings",
+      "price": 299.00,
+      "currency": "kr",
+      "category": "Bottom",
+      "sizes": ["S", "M", "L"],
+      "image": "./image/Bottoms/6/638375481856000000.jpeg",
+      "description": "2.0 New Edition Slim Build High Waist Capri Sports Leggings",
+      "url": "product.b06.html"
+  },
+  {
+      "productId": "mat01",
+      "productName": "The (Big) Mat Made With FSC™ Certified RubberMarble",
+      "price": 180.00,
+      "currency": "kr",
+      "category": "Yoga Mat",
+      "sizes": [],
+      "image": "./image/yoga mat/1/LU9AG9S_064645_1.jpg",
+      "description": "The (Big) Mat Made With FSC™ Certified RubberMarble",
+      "url": "product.mat01.html"
+  },
+  {
+      "productId": "mat02",
+      "productName": "The Workout Mat 6mm",
+      "price": 99.00,
+      "currency": "kr",
+      "category": "Yoga Mat",
+      "sizes": [],
+      "image": "./image/yoga mat/2/LU9AVOS_038470_1.jpg",
+      "description": "The Workout Mat 6mm",
+      "url": "product.mat02.html"
+  },
+  {
+      "productId": "mat03",
+      "productName": "The Lightweight Mat 5mm",
+      "price": 99.00,
+      "currency": "kr",
+      "category": "Yoga Mat",
+      "sizes": [],
+      "image": "./image/yoga mat/3/LU9AYAS_064505_1.jpg",
+      "description": "The Lightweight Mat 5mm",
+      "url": "product.mat03.html"
+  }
+]

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>limming Short Sleeve Sports Bra</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Chosen+Font&display=swap">
+    <script src="nav-bar-script.js"></script>
+    <link rel="stylesheet" href="productDetails-style.css">
+    <link rel="stylesheet" href="nav-bar-style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="home.html" style="font-family: Futura;">MuseMove</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li id="userDropdown" class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdownToggle" role="button">
+                    <i class="fa fa-user" style="font-size: 24px;"></i>
+                    <span id="userName"></span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.html" id="loginLink">Log in</a>
+                    <a class="dropdown-item" href="#" onclick="logout()" id="logoutLink" style="display: none;">Log
+                        out</a>
+                </div>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="cart.html">
+                    <i class="fa fa-shopping-cart" style="font-size: 24px;"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <!-- Carousel -->
+                <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#productCarousel" data-slide-to="1"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="badge">New</div>
+                            <img src="image\top\2\638410918986830000.jpeg" alt="Product Image 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="badge">New</div>
+                            <img src="image/top/2/638410918984500000.jpeg" alt="Product Image 2" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#productCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#productCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h1>Slimming Short Sleeve Sports Bra High Intensity CityWalk Series</h1>
+                    <p class="price">
+                        <span class="current-price">249,00 kr</span>
+                </div>
+
+                </p>
+                <div class="product-options">
+                    <div class="sizes">
+                        <span>Size:</span>
+                        <label for="size-s">S
+                            <input type="radio" id="size-s" name="size" value="S" checked>
+                        </label>
+                        <label for="size-m">M
+                            <input type="radio" id="size-m" name="size" value="M">
+                        </label>
+                        <label for="size-l">L
+                            <input type="radio" id="size-l" name="size" value="L">
+                        </label>
+                    </div>
+                    <div class="quantity">
+                        <span>Quantity:</span>
+                        <select id="quantity-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="add-to-cart" product-id="top02">Add to cart</button>
+                <p class="product-features">
+                    Product Features:
+                </p>
+                <ul>
+                    <li>Two-in-one design functions</li>
+                    <li>Maintains stability around the underbust</li>
+                    <li>Ensures the garment retains its smooth, wrinkle-free cut</li>
+                    <li>No shoulder seam design visually slims the figure</li>
+                    <li>Inverted V chest line tailoring creates a slimming facial proportion</li>
+                    <li>Double-sided air layer fabric</li>
+                    <li>Fine knit count for enhanced shaping effect</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="productDetails-script.js"></script>
+</body>
+
+</html>
